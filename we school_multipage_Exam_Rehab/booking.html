@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    header>
+    <nav class="navbar">
+        <h2 class="logo">Future School</h2>
+
+        <button class="menu-toggle"
+        onclick="document.querySelector('.nav-links').classList.toggle('show')">
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">News</a></li>
+            <li><a class="active" href="booking.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Activities Registration</h1>
+    <p>Register for your favorite school activity.</p>
+</section>
+
+<section class="container">
+    <form class="form-grid"
+    onsubmit="event.preventDefault(); alert('Demo only');">
+
+        <div class="form-group">
+            <label for="name">Student Name</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="grade">Grade</label>
+            <select id="grade" required>
+                <option value="">Choose Grade</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="activity">Activity</label>
+            <select id="activity" required>
+                <option value="">Choose Activity</option>
+                <option>Technology Club</option>
+                <option>Science Lab</option>
+                <option>Arts & Design</option>
+            </select>
+        </div>
+
+        <div class="form-group full">
+            <label for="notes">Notes</label>
+            <textarea id="notes"></textarea>
+        </div>
+
+        <div class="form-group full checkbox">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I agree to the registration information.</label>
+        </div>
+
+        <div class="form-group full">
+            <button type="submit" class="btn">Send Registration</button>
+        </div>
+
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Future School</p>
+</footer>
+</body>
+</html>
